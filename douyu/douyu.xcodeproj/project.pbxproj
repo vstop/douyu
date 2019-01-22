@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		852EFE78B5D06025A4FE28F0 /* Pods_douyu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2533282DC31382517FE925D6 /* Pods_douyu.framework */; };
+		EC42040321F633DC00D7695B /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42040221F633DC00D7695B /* NetWorkTools.swift */; };
+		EC4550FA21F711800013316D /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4550F921F711800013316D /* BaseNavigationController.swift */; };
 		ECFCE39A21E83114004F5419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFCE39921E83114004F5419 /* AppDelegate.swift */; };
 		ECFCE39C21E83114004F5419 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFCE39B21E83114004F5419 /* ViewController.swift */; };
 		ECFCE39F21E83114004F5419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFCE39D21E83114004F5419 /* Main.storyboard */; };
@@ -15,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2533282DC31382517FE925D6 /* Pods_douyu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_douyu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98CD9F20B6E693CF0F25E0C /* Pods-douyu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyu.release.xcconfig"; path = "Target Support Files/Pods-douyu/Pods-douyu.release.xcconfig"; sourceTree = "<group>"; };
+		EC42040221F633DC00D7695B /* NetWorkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
+		EC4550F921F711800013316D /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		ECFCE39621E83114004F5419 /* douyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFCE39921E83114004F5419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECFCE39B21E83114004F5419 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		ECFCE3A021E83116004F5419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECFCE3A321E83116004F5419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECFCE3A521E83116004F5419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEEFA513346CA79FCE523912 /* Pods-douyu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyu.debug.xcconfig"; path = "Target Support Files/Pods-douyu/Pods-douyu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				852EFE78B5D06025A4FE28F0 /* Pods_douyu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19FDEA7998D502F6C4837617 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEEFA513346CA79FCE523912 /* Pods-douyu.debug.xcconfig */,
+				B98CD9F20B6E693CF0F25E0C /* Pods-douyu.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4C0368CCA841C769E6F60582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2533282DC31382517FE925D6 /* Pods_douyu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC42040121F633B600D7695B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EC42040221F633DC00D7695B /* NetWorkTools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		ECFCE38D21E83114004F5419 = {
 			isa = PBXGroup;
 			children = (
 				ECFCE39821E83114004F5419 /* douyu */,
 				ECFCE39721E83114004F5419 /* Products */,
+				19FDEA7998D502F6C4837617 /* Pods */,
+				4C0368CCA841C769E6F60582 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +90,9 @@
 		ECFCE39821E83114004F5419 /* douyu */ = {
 			isa = PBXGroup;
 			children = (
+				EC42040121F633B600D7695B /* Tools */,
 				ECFCE39921E83114004F5419 /* AppDelegate.swift */,
+				EC4550F921F711800013316D /* BaseNavigationController.swift */,
 				ECFCE39B21E83114004F5419 /* ViewController.swift */,
 				ECFCE39D21E83114004F5419 /* Main.storyboard */,
 				ECFCE3A021E83116004F5419 /* Assets.xcassets */,
@@ -71,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECFCE3A821E83116004F5419 /* Build configuration list for PBXNativeTarget "douyu" */;
 			buildPhases = (
+				4143DF1DD442ED79641C93B4 /* [CP] Check Pods Manifest.lock */,
 				ECFCE39221E83114004F5419 /* Sources */,
 				ECFCE39321E83114004F5419 /* Frameworks */,
 				ECFCE39421E83114004F5419 /* Resources */,
+				A2694186CD811E3E5FCAB7C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +170,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4143DF1DD442ED79641C93B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-douyu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2694186CD811E3E5FCAB7C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-douyu/Pods-douyu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-douyu/Pods-douyu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ECFCE39221E83114004F5419 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4550FA21F711800013316D /* BaseNavigationController.swift in Sources */,
 				ECFCE39C21E83114004F5419 /* ViewController.swift in Sources */,
 				ECFCE39A21E83114004F5419 /* AppDelegate.swift in Sources */,
+				EC42040321F633DC00D7695B /* NetWorkTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +369,7 @@
 		};
 		ECFCE3A921E83116004F5419 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEEFA513346CA79FCE523912 /* Pods-douyu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +387,7 @@
 		};
 		ECFCE3AA21E83116004F5419 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98CD9F20B6E693CF0F25E0C /* Pods-douyu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
