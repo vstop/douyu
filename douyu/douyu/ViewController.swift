@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         NetWorkTools.netWorkRequest(urlString: url, method: .post, parameters: ["name" : "zefos"]) { (dic) in
             print(dic)
         }
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: kScreenW, height: kScreenH))
+        imageView.kf_setImage(imageUrl: "http://i2.bvimg.com/664701/ee8b6af18f3c9973.jpg")
+        view.addSubview(imageView)
         view.backgroundColor = UIColor.white
         
     }
